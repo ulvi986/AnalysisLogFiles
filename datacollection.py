@@ -63,7 +63,7 @@ while time.time() - start_time < duration:
 
 # CSV-yə yaz
 df = pd.DataFrame(data)
-file_name = f"system_data_{datetime.now().strftime('%Y-%m-%d_%H-%M')}.csv"
+file_name = f"system_data.csv"
 df.to_csv(file_name, index=False)
 
 print(f"\n✅ Bütün məlumatlar saxlandı: {file_name}")
